@@ -18,10 +18,14 @@ struct ContentView: View {
                 Button(action: {
                     viewStore.send(.tapBtn)
                 }, label: {
-                    Text("Button")
+                    Text("Toggle Button")
                 })
                 
-                Text("TCA: \(String(describing: viewStore.state.isComplete))")
+                Text("Toggle Button isComplete: \(String(describing: viewStore.state.isComplete))")
+                
+                TextField("텍스트 작성: ", text: viewStore.$description)
+                
+                Text("입력된 데이터: \(viewStore.description)")
             }
         }
     }
