@@ -6,16 +6,28 @@
 //
 
 import Foundation
+import Combine
 
+import ComposableArchitecture
+
+@Reducer
 struct ContentReducer {
     
-    enum Action {
-        case viewWillAppear
+    struct State: Equatable {
+        var isComplete = false
     }
     
-    struct State {
-        var testCase: Bool = true
+    enum Action: Equatable {
+        case tapBtn
     }
     
-    
+    var body: some Reducer<State, Action> {
+        Reduce { state, action in
+            switch action {
+            case .tapBtn:
+                state.isComplete.toggle()
+                return .none
+            }
+        }
+    }
 }
