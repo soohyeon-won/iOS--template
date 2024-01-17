@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E69B473E2B57FD1700A8B7E6 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69B473D2B57FD1700A8B7E6 /* SubView.swift */; };
+		E69B47402B57FD3300A8B7E6 /* SubReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69B473F2B57FD3300A8B7E6 /* SubReducer.swift */; };
 		E69C828F2B25CDF300586158 /* ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C828E2B25CDF300586158 /* ProjectApp.swift */; };
-		E69C82912B25CDF300586158 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82902B25CDF300586158 /* ContentView.swift */; };
+		E69C82912B25CDF300586158 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82902B25CDF300586158 /* MainView.swift */; };
 		E69C82932B25CDF400586158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69C82922B25CDF400586158 /* Assets.xcassets */; };
 		E69C82962B25CDF400586158 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69C82952B25CDF400586158 /* Preview Assets.xcassets */; };
 		E69C82A02B25CDF400586158 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C829F2B25CDF400586158 /* ProjectTests.swift */; };
@@ -17,7 +19,7 @@
 		E69C82C92B305DE500586158 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82C82B305DE500586158 /* API.swift */; };
 		E69C82CD2B31BCD500586158 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82CC2B31BCD500586158 /* Server.swift */; };
 		E6ED908C2B4EE243007A980A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = E6ED908B2B4EE243007A980A /* ComposableArchitecture */; };
-		E6ED90902B4EE2AA007A980A /* ContentReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED908F2B4EE2AA007A980A /* ContentReducer.swift */; };
+		E6ED90902B4EE2AA007A980A /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED908F2B4EE2AA007A980A /* MainReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E69B473D2B57FD1700A8B7E6 /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
+		E69B473F2B57FD3300A8B7E6 /* SubReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubReducer.swift; sourceTree = "<group>"; };
 		E69C828B2B25CDF300586158 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69C828E2B25CDF300586158 /* ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectApp.swift; sourceTree = "<group>"; };
-		E69C82902B25CDF300586158 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E69C82902B25CDF300586158 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E69C82922B25CDF400586158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E69C82952B25CDF400586158 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E69C829B2B25CDF400586158 /* ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,7 +55,7 @@
 		E69C82C82B305DE500586158 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E69C82CA2B31B85D00586158 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		E69C82CC2B31BCD500586158 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
-		E6ED908F2B4EE2AA007A980A /* ContentReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentReducer.swift; sourceTree = "<group>"; };
+		E6ED908F2B4EE2AA007A980A /* MainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E69B473B2B57FC0800A8B7E6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E69C82902B25CDF300586158 /* MainView.swift */,
+				E6ED908F2B4EE2AA007A980A /* MainReducer.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E69B473C2B57FCFA00A8B7E6 /* Sub */ = {
+			isa = PBXGroup;
+			children = (
+				E69B473D2B57FD1700A8B7E6 /* SubView.swift */,
+				E69B473F2B57FD3300A8B7E6 /* SubReducer.swift */,
+			);
+			path = Sub;
+			sourceTree = "<group>";
+		};
 		E69C82822B25CDF300586158 = {
 			isa = PBXGroup;
 			children = (
@@ -141,8 +163,8 @@
 		E69C82B82B25CE3900586158 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				E69C82902B25CDF300586158 /* ContentView.swift */,
-				E6ED908F2B4EE2AA007A980A /* ContentReducer.swift */,
+				E69B473B2B57FC0800A8B7E6 /* Main */,
+				E69B473C2B57FCFA00A8B7E6 /* Sub */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -308,11 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E69C82912B25CDF300586158 /* ContentView.swift in Sources */,
+				E69C82912B25CDF300586158 /* MainView.swift in Sources */,
 				E69C82CD2B31BCD500586158 /* Server.swift in Sources */,
 				E69C828F2B25CDF300586158 /* ProjectApp.swift in Sources */,
+				E69B47402B57FD3300A8B7E6 /* SubReducer.swift in Sources */,
+				E69B473E2B57FD1700A8B7E6 /* SubView.swift in Sources */,
 				E69C82C92B305DE500586158 /* API.swift in Sources */,
-				E6ED90902B4EE2AA007A980A /* ContentReducer.swift in Sources */,
+				E6ED90902B4EE2AA007A980A /* MainReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  Project
 //
 //  Created by won soohyeon on 12/10/23.
@@ -9,8 +9,8 @@ import SwiftUI
 
 import ComposableArchitecture
 
-struct ContentView: View {
-    let store: StoreOf<ContentReducer>
+struct MainView: View {
+    let store: StoreOf<MainReducer>
     
     var body: some View {
         WithViewStore(store, observe: {$0}) { viewStore in
@@ -32,7 +32,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(store: Store(initialState: ContentReducer.State()) {
-        ContentReducer()
+    MainView(store: Store(initialState: MainReducer.State()) {
+        MainReducer()
     })
 }
