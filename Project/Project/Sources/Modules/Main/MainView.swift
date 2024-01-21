@@ -28,7 +28,7 @@ struct MainView: View {
                     
                     Text("입력된 데이터: \(viewStore.description)")
                     
-                    NavigationLink(destination: SubView(store: store)) {
+                    NavigationLink(destination: SubView(store: store).navigationBarBackButtonHidden(true)) {
                         
                         VStack {
                             Text("Subview 진입점")
