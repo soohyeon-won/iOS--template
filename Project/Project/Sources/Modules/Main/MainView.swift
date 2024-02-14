@@ -10,6 +10,8 @@ import SwiftUI
 import ComposableArchitecture
 
 struct MainView: View {
+    
+    @StateObject var coordinator: Coordinator = .init(isRoot: true)
     let store: StoreOf<MainReducer>
     
     var body: some View {
@@ -28,14 +30,12 @@ struct MainView: View {
                     
                     Text("입력된 데이터: \(viewStore.description)")
                     
-                    NavigationLink(destination: SubView(store: store).navigationBarBackButtonHidden(true)) {
-                        
-                        VStack {
-                            Text("Subview 진입점")
-                                .padding([.leading, .trailing], 16)
-                                .padding([.top, .bottom], 8)
-                                .background(RoundedRectangle(cornerRadius: 10).strokeBorder(lineWidth: 1))
-                        }
+                    coordinator.navigationLinkSection()
+                    
+                    Button {
+                      coordinator.push(destination: .subView(store: store))
+                    } label: {
+                      Image(systemName: "c.square.fill")
                     }
                 }
                 .navigationBarBackButtonHidden(true)

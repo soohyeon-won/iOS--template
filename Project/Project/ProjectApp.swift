@@ -11,6 +11,7 @@ import ComposableArchitecture
 
 @main
 struct ProjectApp: App {
+    
     var body: some Scene {
         WindowGroup {
             MainView(store: Store(initialState: MainReducer.State()) {
