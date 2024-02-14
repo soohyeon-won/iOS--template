@@ -1,5 +1,5 @@
 //
-//  ContentReducer.swift
+//  MainReducer.swift
 //  Project
 //
 //  Created by won soohyeon on 1/10/24.
@@ -11,7 +11,7 @@ import Combine
 import ComposableArchitecture
 
 @Reducer
-struct ContentReducer {
+struct MainReducer {
     
     struct State: Equatable {
         var isComplete = false

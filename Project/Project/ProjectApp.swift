@@ -11,10 +11,11 @@ import ComposableArchitecture
 
 @main
 struct ProjectApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView(store: Store(initialState: ContentReducer.State()) {
-                ContentReducer()
+            MainView(store: Store(initialState: MainReducer.State()) {
+                MainReducer()
             })
         }
     }
