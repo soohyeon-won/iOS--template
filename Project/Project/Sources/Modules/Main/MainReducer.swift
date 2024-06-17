@@ -39,8 +39,8 @@ struct MainReducer {
     }
 }
 
-
-struct RootFeature: Reducer {
+@Reducer
+struct RootFeature {
   struct State {
     var path = StackState<Path.State>()
   }
@@ -74,7 +74,8 @@ struct RootFeature: Reducer {
       // Core logic for root feature
         switch action {
         case .mainViewBtnTapped:
-            state.path.append(.mainView(MainReducer.State()))
+//            state.path.append(.mainView(MainReducer.State()))
+            state.path.append(.subView(MainReducer.State()))
         case .path(_):
             return .none
         }
