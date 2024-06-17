@@ -8,6 +8,7 @@
 import Foundation
 
 enum Server {
+    
     case real
     
     func domain() -> String {

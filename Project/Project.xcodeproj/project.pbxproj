@@ -22,6 +22,7 @@
 		E69C82CD2B31BCD500586158 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82CC2B31BCD500586158 /* Server.swift */; };
 		E6ED908C2B4EE243007A980A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = E6ED908B2B4EE243007A980A /* ComposableArchitecture */; };
 		E6ED90902B4EE2AA007A980A /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED908F2B4EE2AA007A980A /* MainReducer.swift */; };
+		E9DB2A7E2C1FE4B400472986 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E9DB2A7D2C1FE4B400472986 /* CombineMoya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9DB2A7E2C1FE4B400472986 /* CombineMoya in Frameworks */,
 				E6ED908C2B4EE243007A980A /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,7 +159,6 @@
 				E69C82BA2B25CE5A00586158 /* Sources */,
 				E69C82B92B25CE4000586158 /* Resources */,
 				E69C828E2B25CDF300586158 /* ProjectApp.swift */,
-				E69C82922B25CDF400586158 /* Assets.xcassets */,
 				E69C82942B25CDF400586158 /* Preview Content */,
 			);
 			path = Project;
@@ -200,6 +201,7 @@
 		E69C82B92B25CE4000586158 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E69C82922B25CDF400586158 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -242,6 +244,7 @@
 			name = Project;
 			packageProductDependencies = (
 				E6ED908B2B4EE243007A980A /* ComposableArchitecture */,
+				E9DB2A7D2C1FE4B400472986 /* CombineMoya */,
 			);
 			productName = Project;
 			productReference = E69C828B2B25CDF300586158 /* Project.app */;
@@ -317,6 +320,7 @@
 			mainGroup = E69C82822B25CDF300586158;
 			packageReferences = (
 				E6ED908A2B4EE243007A980A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				E9DB2A7C2C1FE4B400472986 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = E69C828C2B25CDF300586158 /* Products */;
 			projectDirPath = "";
@@ -532,7 +536,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Project/Preview Content\"";
-				DEVELOPMENT_TEAM = 5G8BGQX7US;
+				DEVELOPMENT_TEAM = Z294R55SRP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -561,7 +565,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Project/Preview Content\"";
-				DEVELOPMENT_TEAM = 5G8BGQX7US;
+				DEVELOPMENT_TEAM = Z294R55SRP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -708,6 +712,14 @@
 				minimumVersion = 1.6.0;
 			};
 		};
+		E9DB2A7C2C1FE4B400472986 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -715,6 +727,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E6ED908A2B4EE243007A980A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		E9DB2A7D2C1FE4B400472986 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9DB2A7C2C1FE4B400472986 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
